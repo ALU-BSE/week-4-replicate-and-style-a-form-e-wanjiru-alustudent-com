@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <section>
+        <form action="">
+            <div class="form-wrap">
+                <div class="personal-info">
+                    <h2>Personal Information</h2>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                    <label for="birthday">birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                <div class="preferences">
+                    <h2>Preferences</h2>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color" required>
+                    <p>Preferred contact method:</p>
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-email" name="contact-method" value="Email">
+                    <label for="contact-phone"> Phone </label>
+                    <input type="radio" id="contact-phone" name="contact-method" value="Phone">
+                    <p>Gender:</p>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="quantity">Quantity (between 1 and 5)</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5" required>
+                </div>
+                <div class="cv">
+                    <label for="cv">Upload a file:</label>
+                    <input type="file" id="cv" name="cv" required>
+                </div>
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">I agree to the terms and conditions</label>
+                </div>
+                <div class="sumbit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
